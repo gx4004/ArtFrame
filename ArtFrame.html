@@ -67,9 +67,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   var imageModal = document.getElementById('imageModal');
   imageModal.addEventListener('show.bs.modal', function(event) {
-    var triggerImage = event.relatedTarget; // Modalı tetikleyen resim
+    var triggerImage = event.relatedTarget; 
     var modalImage = document.getElementById('modalImage');
-    modalImage.src = triggerImage.getAttribute('data-bs-image'); // Modal içindeki resmin src'sini tetikleyici resimle aynı yap
+    modalImage.src = triggerImage.getAttribute('data-bs-image');
   });
 });
 </script>
